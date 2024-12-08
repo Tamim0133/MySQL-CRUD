@@ -7,7 +7,7 @@ import "./style.css";
 
 const App = () => {
   return (
-    <Router> {/* Ensure the entire app is wrapped in a Router */}
+    <Router>
       <div className="App">
         <NavBar />
         <MainContent />
@@ -17,10 +17,8 @@ const App = () => {
 };
 
 const NavBar = () => {
-  const location = useLocation();
-  const isBooksPage = location.pathname === '/books'; // Adjust path as needed
   return (
-    <div style={{ marginBottom: isBooksPage ? '0' : '0' }}>
+    <div>
       <nav >
         <ul>
           <li><Link to="/books">Books</Link></li>
@@ -45,3 +43,4 @@ const MainContent = () => {
 };
 
 export default App;
+

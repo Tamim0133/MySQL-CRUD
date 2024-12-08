@@ -22,7 +22,7 @@ function Books() {
     const handleDelete = async (id) => {
         try {
             await axios.delete(`http://localhost:8800/books/${id}`);
-            setBooks(books.filter(book => book.id !== id)); // Remove book from state  
+            setBooks(books.filter(book => book.id !== id));
         } catch (err) {
             console.log(err);
         }
@@ -37,6 +37,7 @@ function Books() {
                     <div className="book" key={book.id}>
                         {book.cover && <img src={book.cover} alt='Book Cover' />}
                         <h2>{book.title}</h2>
+                        <p><span>id # {book.id}</span></p>
                         <p>{book.desc}</p>
                         <span className='price'>${book.price}</span>
                         <div className='button-container'>
