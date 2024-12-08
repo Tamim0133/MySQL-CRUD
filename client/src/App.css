@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  /* Keep the nav fixed */
+  top: 0;
+  /* Align it to the top */
+  left: 0;
+  /* Align it to the left */
+  right: 0;
+  /* Occupy full width */
+  background-color: #282c34;
+  /* Header background color */
+  padding: 10px 0;
+  /* Padding for the header */
+  z-index: 1000;
+  /* Ensure it stays above other content */
+}
+
+nav ul {
+  list-style-type: none;
+  /* Remove bullet points */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margin */
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: center;
+  /* Center the items */
+}
+
+nav li {
+  margin: 0 15px;
+  /* Spacing between links */
+}
+
+nav a {
+  color: #61dafb;
+  /* Link color */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

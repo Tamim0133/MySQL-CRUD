@@ -1,0 +1,118 @@
+.books-container {
+    padding: 20px;
+    /* Add some padding to the container for spacing */
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    justify-content: center;
+
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.book {
+    background: white;
+    border-radius: 8px;
+    padding: 5%;
+    margin: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 40vw;
+    text-align: center;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.price {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: green;
+    font-weight: bold;
+}
+
+.button-container {
+    margin: 10px 0;
+}
+
+.delete,
+.update {
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 80%;
+    background: transparent;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.delete {
+    border-color: red;
+    color: red;
+}
+
+.update {
+    border-color: purple;
+    color: purple;
+}
+
+.delete:hover {
+    background: red;
+    color: white;
+}
+
+/* Default styles for the link */
+.button-container .update a {
+    color: darkviolet;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Change the link color when hovering over the button */
+.update:hover a {
+    color: white;
+}
+
+/* Optional: Button hover effect */
+.update:hover {
+    background: darkviolet;
+    color: white;
+
+    /* Change button background on hover */
+}
+
+@media (max-width: 600px) {
+    .book {
+        width: 90%;
+        /* Responsive adjustment */
+    }
+}

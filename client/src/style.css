@@ -1,0 +1,87 @@
+.App {
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    /* Keep the nav fixed */
+    top: 0;
+    /* Align it to the top */
+    left: 0;
+    /* Align it to the left */
+    right: 0;
+    /* Occupy full width */
+    background-color: purple;
+    /* Header background color */
+    padding: 10px 0;
+    /* Padding for the header */
+    z-index: 1000;
+    /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center the items */
+}
+
+nav li {
+    margin: 0 15px;
+    /* Spacing between links */
+}
+
+nav a {
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.586);
+}
+
+
+.App-content {
+    margin-top: 500px;
+    /* Space below the fixed header to avoid overlap */
+}
+
+.App-logo {
+    height: 40vmin;
+    /* Assuming this logo is used elsewhere */
+    pointer-events: none;
+    /* Prevent pointer events for logo */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        /* Add spinning animation for logo */
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+        /* Starting rotation */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Ending rotation */
+    }
+}
+
+/* style.css */
+.booksPage {
+    margin-top: 600px;
+}
